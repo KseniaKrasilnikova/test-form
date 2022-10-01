@@ -30,6 +30,21 @@ mixin header(headerMods, currentPage)
         text: "О нас"
       },
     ]
+
+    const promoLinks = [
+      {
+        href: "#",
+        src: "drill-green"
+      },
+      {
+        href: "#",
+        src: "drill-yellow"
+      },
+      {
+        href: "#",
+        src: "screwdriver"
+      },
+    ]
   header.header(class=headerMods)
     .container
       .header__content-wrapper
@@ -74,8 +89,6 @@ mixin header(headerMods, currentPage)
                     span.header__choice-underline шт.&nbsp;/&nbsp;
                     span.header__choice-underline.cart-summ 17&nbsp;250&nbsp;
                     span.header__choice-underline р.
-
-
                 li.header__choice-item.header__star
                   a.header__choice-link.hover-red(href="#", aria-label="Посмотреть избранное")
                     .header__choice-icon
@@ -83,7 +96,6 @@ mixin header(headerMods, currentPage)
                     span.header__choice-underline Избранное&nbsp;(
                     span.header__choice-underline.fav-number 7
                     span.header__choice-underline )
-
                 li.header__choice-item.header__star
                   a.header__choice-link.hover-red(href="#", aria-label="К сравнению")
                     .header__choice-icon
@@ -91,10 +103,14 @@ mixin header(headerMods, currentPage)
                     span.header__choice-underline К&nbsp;сравнению&nbsp;
                       span.header__choice-underline.compare-number (5)
 
+            .header__promo-cards
+              +promo-links(promoLinks)
 
 
-            // .header__promo-cards
-            // .header__work-information
+
+
+
+            .header__work-information
 
 
       .header__search-panel

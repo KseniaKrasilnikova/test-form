@@ -1,0 +1,21 @@
+.promo-links {
+  @include reset-list;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  column-gap: 15px;
+}
+
+.promo-links__link {
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.promo-links__item {
+  width: 70px;
+  height: 70px;
+  border: 1px solid $color-gainsboro-2;
+}
+
