@@ -1,4 +1,7 @@
 .main-nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   padding-bottom: 8px;
   border-bottom: 1px solid $color-light-grey;
 }

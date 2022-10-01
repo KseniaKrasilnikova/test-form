@@ -55,7 +55,12 @@ mixin header(headerMods, currentPage)
                   else
                     a.main-nav__link.hover-red(href=link.href)=link.text
 
-            .header__user
+            .header__entrance
+              ul.header__entrance-list
+                li.header__entrance-item
+                  button.button.button--transparent.header__entrance-btn.hover-red(type="button", aria-label="Вход в личный кабинет") Вход
+                li.header__entrance-item.has-divider
+                  button.button.button--transparent.header__entrance-btn.hover-red(type="button", aria-label="Регистрация") Регистрация
 
           .header__menu
             // .header__mock

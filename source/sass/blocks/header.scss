@@ -1,7 +1,7 @@
 .header {
   display: flex;
   flex-direction: column;
-  padding-top: 15px;
+  padding-top: 16px;
 }
 
 .header__content-wrapper {
@@ -41,4 +41,51 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+}
+
+.header__entrance {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-left: auto;
+}
+
+.header__entrance-list {
+  @include reset-list;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: -0.01em;
+
+  color: $color-nero;
+}
+
+.header__entrance-item {
+  max-width: 150px;
+  padding: 0 14px;
+
+  &:last-of-type {
+    padding-right: 0;
+  }
+
+  &.has-divider {
+    position: relative;
+
+    &:before {
+      position: absolute;
+      content: "";
+      left: 0;
+      top: 2px;
+      height: calc(100% - 4px);
+      width: 1.2px;
+      background-color: black;
+    }
+  }
+}
+
+.header__entrance-btn {
+  padding: 0;
 }
