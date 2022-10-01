@@ -1,8 +1,44 @@
-.header__title  {
-  font-family: $font-family--heliosCond;
-  font-weight: 600;
+.header {
+  display: flex;
+  flex-direction: column;
+  padding-top: 15px;
 }
-.header__title-roboto {
-  font-family: $font-family--roboto;
+
+.header__content-wrapper {
+  display: flex;
+  flex-direction: row;
+  row-gap: 30px;
+  column-gap: 29px;
+}
+
+.header__logo {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+.header__logo-img {
+  margin-bottom: 7px;
+
+  img {
+    flex-shrink: 0;
+    width: 210px;
+    height: 111px;
+  }
+}
+
+.header__logo-text {
+  font-family: $font-family--heliosCond;
   font-weight: 700;
+  font-size: 13px;
+  line-height: 15px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.header__content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }

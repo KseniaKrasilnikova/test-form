@@ -52,6 +52,19 @@
   transition: none !important;
 }
 
+.hover-red {
+  transition: color $trans-default;
+
+  &:hover,
+  &:focus {
+    color: $color-torch-red;
+  }
+
+  &:focus-visible {
+    outline: none;
+  }
+}
+
 // используйте для скрытия нежелательных анимаций-скачков при поворотах экрана
 @keyframes disableBreakpointAnimation {
   0% {

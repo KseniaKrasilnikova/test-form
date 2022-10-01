@@ -1,4 +1,67 @@
 mixin header(headerMods, currentPage)
+  -
+    const headerLinks = [
+      {
+        href: "#",
+        text: "Каталог инструментов",
+      },
+      {
+        href: "#",
+        text: "Все для сада"
+      },
+      {
+        href: "#",
+        text: "Ручной инструмент"
+      },
+      {
+        href: "#",
+        text: "Электрика"
+      },
+      {
+        href: "#",
+        text: "Доставка"
+      },
+      {
+        href: "#",
+        text: "Оплата"
+      },
+      {
+        href: "#",
+        text: "О нас"
+      },
+    ]
   header.header(class=headerMods)
-    p.header__title 'HeliosCond'
-    p.header__title-roboto 'Roboto'
+    .container
+      .header__content-wrapper
+        if(currentPage === "main.html")
+          .header__logo
+            .header__logo-img
+              +img("content", "logo", "png", 120, 120, "Логотип")
+            span.header__logo-text магазин инструмента
+        else
+          a.header__logo(href="main.html", aria-label="Переход на главную")
+            .header__logo-img
+              +img("content", "logo", "png", 120, 120, "Логотип")
+            span.header__logo-text магазин инструмента
+
+        .header__content
+          nav.main-nav
+            ul.main-nav__list
+              each link in headerLinks
+                - const activeState = currentUrl === link.href
+                li.main-nav__item
+                  if(activeState)
+                    span.main-nav__link.is-active=link.text
+                  else
+                    a.main-nav__link.hover-red(href=link.href)=link.text
+
+            .header__user
+
+          .header__menu
+            // .header__mock
+            // .header__choice
+            // .header__promo-cards
+            // .header__work-information
+
+
+      .header__search-panel
