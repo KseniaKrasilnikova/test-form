@@ -56,7 +56,7 @@
   transition: color $trans-default;
 
   &:hover,
-  &:focus {
+  &:focus{
     color: $color-torch-red;
   }
 

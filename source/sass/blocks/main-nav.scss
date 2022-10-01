@@ -2,7 +2,9 @@
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  padding-bottom: 8px;
+  padding-bottom: 7px;
+  margin-bottom: 22px;
+
   border-bottom: 1px solid $color-light-grey;
 }
 
@@ -15,12 +17,14 @@
   font-size: 12px;
   line-height: 14px;
   letter-spacing: -0.01em;
-
-  color: $color-nero;
 }
 
 .main-nav__item:not(:last-of-type) {
   margin-right: 25px;
+}
+
+.main-nav__link {
+  color: $color-nero;
 }
 
 .main-nav__link.is-active {

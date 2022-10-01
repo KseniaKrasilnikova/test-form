@@ -63,8 +63,36 @@ mixin header(headerMods, currentPage)
                   button.button.button--transparent.header__entrance-btn.hover-red(type="button", aria-label="Регистрация") Регистрация
 
           .header__menu
-            // .header__mock
-            // .header__choice
+            .header__mock
+            .header__choice
+              ul.header__choice-list
+                li.header__choice-item.header__cart
+                  a.header__choice-link.font-big.hover-red(href="#", aria-label="Посмотреть корзину")
+                    .header__choice-icon
+                      +icon("icon-cart", 19, 18)
+                    span.header__choice-underline.cart-number 3&nbsp;
+                    span.header__choice-underline шт.&nbsp;/&nbsp;
+                    span.header__choice-underline.cart-summ 17&nbsp;250&nbsp;
+                    span.header__choice-underline р.
+
+
+                li.header__choice-item.header__star
+                  a.header__choice-link.hover-red(href="#", aria-label="Посмотреть избранное")
+                    .header__choice-icon
+                      +icon("icon-star-fill", 14, 14)
+                    span.header__choice-underline Избранное&nbsp;(
+                    span.header__choice-underline.fav-number 7
+                    span.header__choice-underline )
+
+                li.header__choice-item.header__star
+                  a.header__choice-link.hover-red(href="#", aria-label="К сравнению")
+                    .header__choice-icon
+                      +icon("icon-scales", 18, 16)
+                    span.header__choice-underline К&nbsp;сравнению&nbsp;
+                      span.header__choice-underline.compare-number (5)
+
+
+
             // .header__promo-cards
             // .header__work-information
 
