@@ -1,0 +1,11 @@
+mixin contacts-block()
+  .contacts-block
+    .contacts-block__time
+      span.bold Время работы:
+      span.contacts-block__hours 10:00 — 19:00
+    a(href="#" aria-label="позвонить" target="_blank" rel= "nofollow noopener").contacts-block__tel.bold.hover-red 8&nbsp;495&nbsp;721-25-25
+    .contacts-block__address
+      span.contacts-block__current-city Москва
+      button(type="button" aria-label="сменить город").button.button--transparent.contacts-block__select.hover-red
+        span.contacts-block__triangle
+        span.contacts-block__dashed сменить

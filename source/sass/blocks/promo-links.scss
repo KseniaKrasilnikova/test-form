@@ -3,6 +3,7 @@
   display: grid;
   grid-template-columns: repeat(3, auto);
   column-gap: 15px;
+  margin-top: 2px;
 }
 
 .promo-links__link {
@@ -16,6 +17,12 @@
 .promo-links__item {
   width: 70px;
   height: 70px;
-  border: 1px solid $color-gainsboro-2;
-}
 
+  border: 1px solid $color-gainsboro-2;
+  transition: border $trans-default;
+
+  &:hover,
+  &:focus {
+    border: 1px solid $color-nero;
+  }
+}
