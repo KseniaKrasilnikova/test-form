@@ -1,0 +1,97 @@
+// МИКСИНЫ для настроек поведения элементов
+//---------------------------------
+
+// *** Миксин для настроек плавности интерактивных элементов ***
+
+@mixin transition-settings ($properties, $duration: $trans--duration-default, $timing-func: ease) {
+  @if type-of($properties) == map {
+    $transition-list: join($properties, null, $separator: auto, $bracketed: auto);
+    transition: $transition-list;
+  }
+
+  @else {
+    transition: {
+      property: $properties;
+      duration: $duration;
+      timing-function: $timing-func;
+    }
+  }
+}
+
+// МИКСИНЫ для сброса поведения эл-тов по умолчанию
+//---------------------------------
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin non-touch {
+  @media (hover: hover) and (pointer: fine) {
+    @content;
+  }
+}
+
+// *** Миксин для увеличения области нажатия кнопки ***
+@mixin expand-interactive-area($width, $height: $width) {
+  position: relative;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+
+    width: $width;
+    height: $height;
+
+    transform: translate(-50%, -50%);
+  }
+}
+
+
+// МИКСИНЫ для разных Медиавыражений
+//---------------------------------
+@mixin retina {
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    @content;
+  }
+}
+
+@mixin vp--1919 {
+  @media (max-width: $vp--1920 - 1) {
+    @content;
+  }
+}
+
+@mixin vp--1439 {
+  @media (max-width: $vp--1440 - 1) {
+    @content;
+  }
+}
+
+@mixin vp--1279 {
+  @media (max-width: $vp--1280 - 1) {
+    @content;
+  }
+}
+
+@mixin vp--1023 {
+  @media (max-width: $vp--1024 - 1) {
+    @content;
+  }
+}
+
+@mixin vp--767 {
+  @media (max-width: $vp--768 - 1) {
+    @content;
+  }
+}
+
+@mixin vp--374 {
+  @media (max-width: $vp--375 - 1) {
+    @content;
+  }
+}
