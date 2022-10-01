@@ -1,41 +1,32 @@
-/*
-==============================================================================================================
------------------------------------------------- Шрифт «Open Sans» ------------------------------------------------
-==============================================================================================================
-*/
-
-// *** жирность «Bold» ***
 @font-face {
-  font-family: "OpenSans";
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-
-  src:
-    url("../fonts/OpenSans-Bold.woff2") format("woff2"),
-    url("../fonts/OpenSans-Bold.woff") format("woff");
-}
-
-// *** жирность «Regular» ***
-@font-face {
-  font-family: "OpenSans";
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-
-  src:
-    url("../fonts/OpenSans-Regular.woff2") format("woff2"),
-    url("../fonts/OpenSans-Regular.woff") format("woff");
-}
-
-// *** жирность «SemiBold» ***
-@font-face {
-  font-family: "OpenSans";
+  font-family: "HeliosCond";
   font-style: normal;
   font-weight: 600;
   font-display: swap;
 
   src:
-    url("../fonts/OpenSans-SemiBold.woff2") format("woff2"),
-    url("../fonts/OpenSans-SemiBold.woff") format("woff");
+    url("../fonts/HeliosCond-Bold.woff2") format("woff2"),
+    url("../fonts/HeliosCond-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+
+  src:
+    url("../fonts/roboto-cyrillic-regular.woff2") format("woff2"),
+    url("../fonts/roboto-cyrillic-regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+
+  src:
+    url("../fonts/roboto-cyrillic-700.woff2") format("woff2"),
+    url("../fonts/roboto-cyrillic-700.woff") format("woff");
 }
