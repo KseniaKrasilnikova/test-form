@@ -45,6 +45,35 @@ mixin header(headerMods, currentPage)
         src: "screwdriver"
       },
     ]
+
+    const searchTabs = [
+      {
+        text: "Перфораторы",
+        label: "перфораторы",
+        className: "active",
+      },
+      {
+        text: "Дрели",
+        label: "дрели"
+      },
+      {
+        text: "Шлифмашины",
+        label: "шлифмашины"
+      },
+      {
+        text: "Пистолеты",
+        label: "пистолеты"
+      },
+      {
+        text: "Электропилы",
+        label: "электропилы"
+      },
+      {
+        text: "Наборы инструментов",
+        label: "наборы инструментов"
+      },
+    ]
+
   header.header(class=headerMods)
     .container
       .header__content-wrapper
@@ -107,4 +136,4 @@ mixin header(headerMods, currentPage)
               +promo-links(promoLinks)
             .header__work-information
               +contacts-block()
-      +search-panel()
+      +search-panel(searchTabs)

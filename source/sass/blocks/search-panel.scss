@@ -17,6 +17,7 @@
   flex-shrink: 0;
   padding: 2.1px;
   margin-top: 3px;
+  margin-right: 7px;
 
   svg {
     width: 100%;
@@ -33,7 +34,7 @@
 }
 
 .search-panel__sale {
-  margin-left: auto;
+  margin-left: 14px;
   margin-right: 7px;
   margin-top: 4px;
 
@@ -45,7 +46,36 @@
 
 .search-panel__tabs {
   width: 100%;
+  min-height: inherit;
   display: flex;
   align-items: center;
   background-color: $color-nero;
+}
+
+.search-panel__tabs {
+  @include reset-list;
+  align-items: stretch;
+  display: flex;
+  padding-left: 59px;
+}
+
+.search-panel__tab-btn {
+  padding: 9px 19px;
+
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0;
+  color: $color-default-white;
+
+  &.active {
+    color: $color-default-black;
+    background-color: $color-tangerine-yellow;
+    //border: 0.5px solid $color-tangerine-yellow;
+    pointer-events: none;
+  }
+}
+
+.search-panel__item {
+  align-items: stretch;
+  display: flex;
 }
