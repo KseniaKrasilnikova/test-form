@@ -6,6 +6,12 @@
   margin-bottom: 19px;
 
   border-bottom: 1px solid $color-light-grey;
+
+  @include vp--767 {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
 }
 
 .main-nav__list {
@@ -17,6 +23,10 @@
   font-size: 12px;
   line-height: 14px;
   letter-spacing: -0.01em;
+
+  @include vp--767 {
+    display: none;
+  }
 }
 
 .main-nav__item {
@@ -25,12 +35,14 @@
   &:not(:last-of-type) {
     margin-right: 25px;
   }
+
+  @include vp--1023 {
+    &:not(:last-of-type) {
+      margin-right: 15px;
+    }
+  }
 }
 
 .main-nav__link {
   color: $color-nero;
-}
-
-.main-nav__link.is-active {
-  color: $color-torch-red;
 }

@@ -1,4 +1,4 @@
-// import {scroll} from './modules/scroll';
+import {initBurger} from './modules/init-burger-action';
 
 // ---------------------------------
 
@@ -6,12 +6,11 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // Utils
   // ---------------------------------
-  // scroll();
 
   // Modules
   // ---------------------------------
   window.addEventListener('load', () => {
-
+    initBurger();
   });
 });
 

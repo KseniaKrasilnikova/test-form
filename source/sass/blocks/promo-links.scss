@@ -26,4 +26,9 @@
   &:focus {
     border: 1px solid $color-nero;
   }
+
+  @include vp--1023 {
+    width: 80px;
+    height: 80px;
+  }
 }

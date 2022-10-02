@@ -55,26 +55,15 @@
 .hover-red {
   transition: color $trans-default;
 
-  &:hover,
-  &:focus{
-    color: $color-torch-red;
-  }
+  @media (hover: hover), screen and (min-width: 768px) {
+    &:hover,
+    &:focus{
+      color: $color-torch-red;
+    }
 
-  &:focus-visible {
-    outline: none;
-  }
-}
-
-// используйте для скрытия нежелательных анимаций-скачков при поворотах экрана
-@keyframes disableBreakpointAnimation {
-  0% {
-    visibility: hidden;
-    opacity: 0;
-  }
-
-  100% {
-    visibility: hidden;
-    opacity: 0;
+    &:focus-visible {
+      outline: none;
+    }
   }
 }
 
