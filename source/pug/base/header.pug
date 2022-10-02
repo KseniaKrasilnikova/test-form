@@ -165,6 +165,19 @@ mixin header(headerMods, currentPage)
                     span.mobile-nav__link.is-active=link.text
                   else
                     a.mobile-nav__link(href=link.href)=link.text
-
+          .mobile-nav__block
+            .mobile-nav__contacts
+              span.bold.mobile-nav__time Время работы:
+              span 10:00 — 19:00
+            .mobile-nav__tel
+              a(href="#" aria-label="позвонить" target="_blank" rel= "nofollow noopener") 8&nbsp;495&nbsp;721-25-25
+            .mobile-nav__address
+              span.mobile-nav__current-city Москва
+              button(type="button" aria-label="сменить город").button.button--transparent.mobile-nav__select
+                span.mobile-nav__triangle
+                span.dashed сменить
+    .container
+      .mobile-nav__promo
+        +promo-links(promoLinks)
     .container
       +search-panel(searchTabs)

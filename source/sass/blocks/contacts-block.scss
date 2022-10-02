@@ -52,11 +52,6 @@
   transition: border-color $trans-default;
 }
 
-.contacts-block__dashed {
-  text-decoration: underline;
-  text-decoration-style: dotted;
-}
-
 .contacts-block__select {
   display: flex;
   align-items: baseline;

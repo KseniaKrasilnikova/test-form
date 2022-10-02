@@ -31,4 +31,9 @@
     width: 80px;
     height: 80px;
   }
+
+  @include vp--767 {
+    width: 100%;
+    height: 100%;
+  }
 }
