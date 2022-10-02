@@ -3,4 +3,4 @@ mixin promo-links(data)
     each link in data
       li.promo-links__item
         a.promo-links__link(href=link.href)
-          +picture("content", link.src, "jpg", 70, 70)
+          +picture("content", link.src, "jpg", 70, 70, link.altText)

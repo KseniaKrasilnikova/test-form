@@ -26,6 +26,7 @@
   @include vp--767 {
     align-items: center;
     margin-bottom: 9px;
+    column-gap: unset;
   }
 }
 
@@ -270,6 +271,7 @@
 
   svg {
     fill: none;
+    color: $color-default-black;
     width: 100%;
     height: 100%;
   }
@@ -285,6 +287,7 @@
   padding: 0;
   width: 34px;
   height: fit-content;
+  margin-right: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -293,6 +296,7 @@
   svg {
     width: 100%;
     height: 100%;
+    color: $color-nero;
   }
 
   &.btn-close-menu {
@@ -345,4 +349,12 @@
 
 .header__wrapper {
   position: relative;
+}
+
+.header__promo-mobile {
+  display: none;
+  @include vp--767 {
+    display: grid;
+    margin-bottom: 10px;
+  }
 }

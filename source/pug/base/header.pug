@@ -34,15 +34,18 @@ mixin header(headerMods, currentPage)
     const promoLinks = [
       {
         href: "#",
-        src: "drill-green"
+        src: "drill-green",
+        altText: "дрель"
       },
       {
         href: "#",
-        src: "drill-yellow"
+        src: "drill-yellow",
+        altText: "дрель"
       },
       {
         href: "#",
-        src: "screwdriver"
+        src: "screwdriver",
+        altText: "шуруповёрт"
       },
     ]
 
@@ -177,7 +180,7 @@ mixin header(headerMods, currentPage)
                 span.mobile-nav__triangle
                 span.dashed сменить
     .container
-      .mobile-nav__promo
+      .header__promo-mobile
         +promo-links(promoLinks)
     .container
       +search-panel(searchTabs)

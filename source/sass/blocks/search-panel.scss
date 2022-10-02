@@ -23,6 +23,7 @@
     width: 100%;
     height: 100%;
     transition: color $trans-default;
+    color: $color-default-black;
   }
 
   &:hover,

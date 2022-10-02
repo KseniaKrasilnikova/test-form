@@ -72,6 +72,7 @@
 
 .mobile-nav__select {
   padding: 0;
+  color: $color-nero;
 }
 
 .mobile-nav__triangle {
@@ -84,12 +85,4 @@
 
 .mobile-nav__current-city {
   margin-right: 10px;
-}
-
-.mobile-nav__promo {
-  display: none;
-  @include vp--767 {
-    display: grid;
-    margin-bottom: 10px;
-  }
 }
