@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  padding-bottom: 7px;
+  padding-bottom: 3px;
   margin-bottom: 19px;
 
   border-bottom: 1px solid $color-light-grey;
@@ -19,8 +19,12 @@
   letter-spacing: -0.01em;
 }
 
-.main-nav__item:not(:last-of-type) {
-  margin-right: 25px;
+.main-nav__item {
+  margin-bottom: 5px;
+
+  &:not(:last-of-type) {
+    margin-right: 25px;
+  }
 }
 
 .main-nav__link {

@@ -34,9 +34,12 @@
 }
 
 .search-panel__sale {
+  display: flex;
+  align-items: center;
+  max-width: 127px;
   margin-left: 14px;
   margin-right: 7px;
-  margin-top: 4px;
+  min-height: inherit;
 
   font-size: 14px;
   line-height: 16px;
@@ -45,18 +48,15 @@
 }
 
 .search-panel__tabs {
+  @include reset-list;
   width: 100%;
   min-height: inherit;
   display: flex;
-  align-items: center;
-  background-color: $color-nero;
-}
-
-.search-panel__tabs {
-  @include reset-list;
+  flex-wrap: wrap;
   align-items: stretch;
-  display: flex;
   padding-left: 59px;
+
+  background-color: $color-nero;
 }
 
 .search-panel__tab-btn {
@@ -70,8 +70,11 @@
   &.active {
     color: $color-default-black;
     background-color: $color-tangerine-yellow;
-    //border: 0.5px solid $color-tangerine-yellow;
     pointer-events: none;
+  }
+
+  @include vp--1279 {
+    font-size: 12px;
   }
 }
 

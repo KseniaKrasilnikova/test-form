@@ -15,9 +15,14 @@
 .contacts-block__time {
   margin-bottom: 3px;
   letter-spacing: -0.01em;
+
+  span:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
 .contacts-block__hours {
+  margin-left: auto;
   letter-spacing: -0.025em;
 }
 
@@ -27,6 +32,10 @@
   font-size: 25px;
   line-height: 29px;
   letter-spacing: -0.02em;
+
+  @include vp--1279 {
+    font-size: 16px;
+  }
 }
 
 .contacts-block__address {
