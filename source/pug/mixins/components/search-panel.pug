@@ -1,9 +1,0 @@
-mixin search-panel(tabs)
-  .search-panel
-    button(type="button", aria-label="Искать товар").button.button--transparent.search-panel__btn
-      +icon("icon-search", 20, 20)
-    ul.search-panel__tabs
-      each item in tabs
-        li.search-panel__item
-          button(class!=item.className type="button", aria-label=item.label).button.button--transparent.search-panel__tab-btn.bold.hover-red!=item.text
-    a(href="#" aria-label="Распродажа").search-panel__sale.bold.hover-red Распродажа

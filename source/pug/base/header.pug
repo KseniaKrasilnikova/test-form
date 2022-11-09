@@ -31,51 +31,6 @@ mixin header(headerMods, currentPage)
       },
     ]
 
-    const promoLinks = [
-      {
-        href: "#",
-        src: "drill-green",
-        altText: "дрель"
-      },
-      {
-        href: "#",
-        src: "drill-yellow",
-        altText: "дрель"
-      },
-      {
-        href: "#",
-        src: "screwdriver",
-        altText: "шуруповёрт"
-      },
-    ]
-
-    const searchTabs = [
-      {
-        text: "Перфораторы",
-        label: "перфораторы",
-        className: "active",
-      },
-      {
-        text: "Дрели",
-        label: "дрели"
-      },
-      {
-        text: "Шлифмашины",
-        label: "шлифмашины"
-      },
-      {
-        text: "Пистолеты",
-        label: "пистолеты"
-      },
-      {
-        text: "Электропилы",
-        label: "электропилы"
-      },
-      {
-        text: "Наборы инструментов",
-        label: "наборы инструментов"
-      },
-    ]
 
   header.header(class=headerMods)
     .container
@@ -88,12 +43,10 @@ mixin header(headerMods, currentPage)
           .header__logo
             .header__logo-img
               +img("content", "logo", "png", 120, 120, "Логотип")
-            span.header__logo-text магазин инструмента
         else
           a.header__logo(href="main.html", aria-label="Переход на главную")
             .header__logo-img
               +img("content", "logo", "png", 120, 120, "Логотип")
-            span.header__logo-text магазин инструмента
 
         .header__content
           nav.main-nav
@@ -105,57 +58,8 @@ mixin header(headerMods, currentPage)
                     span.main-nav__link.is-active=link.text
                   else
                     a.main-nav__link.hover-red(href=link.href)=link.text
-            ul.header__icons
-              li.header__icons-item
-                a(href="#", aria-label="Посмотреть корзину").header__icons-link
-                  +icon("icon-cart", 19, 18)
-              li.header__icons-item
-                a(href="#", aria-label="Посмотреть избранное").header__icons-link
-                  +icon("icon-star-fill", 14, 14)
-              li.header__icons-item
-                a(href="#", aria-label="К сравнению").header__icons-link
-                  +icon("icon-scales", 18, 16)
-
-            .header__entrance
-              ul.header__entrance-list
-                li.header__entrance-item
-                  button.button.button--transparent.header__entrance-btn.hover-red(type="button" aria-label="Вход в личный кабинет") Вход
-                li.header__entrance-item.has-divider
-                  button.button.button--transparent.header__entrance-btn.hover-red(type="button" aria-label="Регистрация") Регистрация
-              button(type="button" aria-label="Регистрация и вход").header__entrance-mobile.button.button--transparent
-                +icon("icon-user", 17, 16)
-
-          .header__menu
-            .header__mock
-            .header__choice
-              ul.header__choice-list
-                li.header__choice-item.header__cart
-                  a.header__choice-link.font-big.hover-red(href="#" aria-label="Посмотреть корзину")
-                    .header__choice-icon
-                      +icon("icon-cart", 19, 18)
-                    span.header__choice-underline.cart-number 3&nbsp;
-                    span.header__choice-underline шт.&nbsp;/&nbsp;
-                    span.header__choice-underline.cart-summ 17&nbsp;250&nbsp;
-                    span.header__choice-underline р.
-                li.header__choice-item.header__star
-                  a.header__choice-link.hover-red(href="#" aria-label="Посмотреть избранное")
-                    .header__choice-icon
-                      +icon("icon-star-fill", 14, 14)
-                    span.header__choice-underline Избранное&nbsp;(
-                    span.header__choice-underline.fav-number 7
-                    span.header__choice-underline )
-                li.header__choice-item.header__star
-                  a.header__choice-link.hover-red(href="#" aria-label="К сравнению")
-                    .header__choice-icon
-                      +icon("icon-scales", 18, 16)
-                    span.header__choice-underline К&nbsp;сравнению&nbsp;
-                      span.header__choice-underline.compare-number (5)
-
-            .header__promo-cards
-              +promo-links(promoLinks)
-            .header__work-information
-              +contacts-block()
         .bg-overlay
+
     .mobile-nav
       .mobile-nav__wrapper
         .container
@@ -167,20 +71,4 @@ mixin header(headerMods, currentPage)
                   if(activeState)
                     span.mobile-nav__link.is-active=link.text
                   else
-                    a.mobile-nav__link(href=link.href)=link.text
-          .mobile-nav__block
-            .mobile-nav__contacts
-              span.bold.mobile-nav__time Время работы:
-              span 10:00 — 19:00
-            .mobile-nav__tel
-              a(href="#" aria-label="позвонить" target="_blank" rel= "nofollow noopener") 8&nbsp;495&nbsp;721-25-25
-            .mobile-nav__address
-              span.mobile-nav__current-city Москва
-              button(type="button" aria-label="сменить город").button.button--transparent.mobile-nav__select
-                span.mobile-nav__triangle
-                span.dashed сменить
-    .container
-      .header__promo-mobile
-        +promo-links(promoLinks)
-    .container
-      +search-panel(searchTabs)
+                    a.mobile-nav__link.hover-red(href=link.href)=link.text

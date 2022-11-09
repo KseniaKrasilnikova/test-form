@@ -31,6 +31,16 @@
   }
 }
 
+.scroll-lock-ios {
+  position: fixed;
+
+  overflow: hidden;
+}
+
+.scroll-lock {
+  overflow: hidden;
+}
+
 .visually-hidden {
   position: absolute;
 
@@ -71,7 +81,7 @@
   font-weight: 700;
 }
 
-.dashed {
-  text-decoration: underline;
-  text-decoration-style: dotted;
-}
+//.dashed {
+//  text-decoration: underline;
+//  text-decoration-style: dotted;
+//}
