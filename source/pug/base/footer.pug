@@ -1,0 +1,59 @@
+mixin footer(footerMods)
+  -
+    const wallets = [
+      {
+        text: 'QIWI wallet',
+        iconName: 'icon-qiwi',
+        iconWidth: 21,
+        iconHeight: 20,
+      },
+      {
+        text: 'Yandex Money',
+        iconName: 'icon-yandex-money',
+        iconWidth: 15,
+        iconHeight: 18,
+      },
+      {
+        text: 'Web Money',
+        iconName: 'icon-web-money',
+        iconWidth: 19,
+        iconHeight: 18,
+      }
+    ]
+    const contacts = [
+      {
+        href: 'mailto:info@ipsum228.com',
+        text: 'info@ipsum228.com',
+        iconName: 'icon-email',
+        iconWidth: 16,
+        iconHeight: 13,
+        label: 'Свяжитесь с нами по электронной почте'
+      },
+      {
+        href: '#',
+        text: 'Мы вконтакте',
+        iconName: 'icon-vk',
+        iconWidth: 12,
+        iconHeight: 14,
+        label: 'Наша страница ВКонтакте'
+      }
+    ]
+  footer.footer(class=footerMods)
+    .container
+      .footer__content
+        .footer__copyright &copy; 2018 «LOREMIPSUM.NET» Все права защищены.
+        .footer__wallets-wrapper
+          ul.footer__wallets-list
+            each item in wallets
+              li.footer__wallet-item
+                span.footer__icon
+                  +icon(item.iconName, item.iconWidth, item.iconHeight)
+                span.footer__wallet-text !{item.text}
+        .footer__contacts-wrapper
+          ul.footer__contacts-list
+            each contact in contacts
+              li.footer__contact-item
+                a(href=contact.href aria-label=contact.label target="_blank" rel="nofollow noopener").footer__link.hover-main
+                  span.footer__icon
+                    +icon(contact.iconName, contact.iconWidth, contact.iconHeight)
+                  span.footer__contact-text !{contact.text}

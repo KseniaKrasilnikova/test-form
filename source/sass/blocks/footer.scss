@@ -1,0 +1,88 @@
+.footer {
+  background-color: $color-gray-bg;
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+    font-size: 13px;
+    @include vp--1023 {
+      flex-direction: column;
+      gap: 16px;
+    }
+  }
+
+  &__copyright {
+    max-width: 349px;
+    border-right: 1px solid $color-font-white;
+    padding-right: 43px;
+    @include vp--1279 {
+      padding-right: 23px;
+    }
+    @include vp--1023 {
+      order: 3;
+      max-width: 100%;
+      padding-right: 0;
+      border-right: none;
+    }
+    @include vp--374 {
+      font-size: 11px;
+    }
+  }
+
+  &__contacts-wrapper {
+    max-width: 34%;
+    padding-left: 35px;
+    border-left: 1px solid $color-font-white;
+    @include vp--1023 {
+      order: 2;
+      max-width: 100%;
+      padding-left: 0;
+      border-left: none;
+    }
+  }
+  &__wallets-wrapper {
+    max-width: 35%;
+    padding: 0 8px;
+    @include vp--1023 {
+      order: 1;
+      max-width: 100%;
+      padding: 0;
+    }
+  }
+
+  &__wallets-list,
+  &__contacts-list {
+    @include reset-list;
+    display: flex;
+    align-items: center;
+    gap: 44px;
+    @include vp--374 {
+      gap: 24px;
+    }
+  }
+
+  &__wallets-list {
+    gap: 37px;
+    color: $color-font-white;
+  }
+
+  &__wallet-item,
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    max-width: 155px;
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    svg {
+      color: $color-blue;
+    }
+  }
+}
