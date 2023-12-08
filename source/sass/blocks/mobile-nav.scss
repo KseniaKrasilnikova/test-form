@@ -1,27 +1,28 @@
 .mobile-nav {
   position: relative;
+
+  &__wrapper {
+    display: none;
+    opacity: 0;
+    height: 0;
+    transition: transform $trans-default, opacity $trans-default;
+  }
+
+  &__wrapper.active {
+    display: block;
+    z-index: 5;
+    position: absolute;
+    left: 0;
+    opacity: 100;
+    width: 100%;
+    height: auto;
+    background-color: $color-main-bg;
+
+    padding: 20px 0 28px;
+  }
 }
 
-.mobile-nav__wrapper {
-  display: none;
-  opacity: 0;
-  height: 0;
-  transition: transform $trans-default, opacity $trans-default;
-}
 
-.mobile-nav__wrapper.active {
-  display: block;
-  z-index: 5;
-  position: absolute;
-  top: -1px;
-  left: 0;
-  opacity: 100;
-  width: 100%;
-  height: auto;
-  background-color: $color-default-white;
-
-  padding: 20px 0 28px;
-}
 
 .mobile-nav__list {
   @include reset-list;
@@ -36,10 +37,10 @@
 }
 
 .mobile-nav__link {
-  color: $color-nero;
+  //color: $color-nero;
 }
 
 .mobile-nav__select {
   padding: 0;
-  color: $color-nero;
+  //color: $color-nero;
 }

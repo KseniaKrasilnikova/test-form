@@ -1,32 +1,42 @@
 @font-face {
-  font-family: "HeliosCond";
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src:
+    url("../fonts/Lato-Regular.woff2") format("woff2"),
+    url("../fonts/Lato-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Lato";
   font-style: normal;
   font-weight: 600;
   font-display: swap;
 
   src:
-    url("../fonts/HeliosCond-Bold.woff2") format("woff2"),
-    url("../fonts/HeliosCond-Bold.woff") format("woff");
+    url("../fonts/Lato-Semibold.woff2") format("woff2"),
+    url("../fonts/Lato-Semibold.woff") format("woff");
 }
 
 @font-face {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-
-  src:
-    url("../fonts/roboto-cyrillic-regular.woff2") format("woff2"),
-    url("../fonts/roboto-cyrillic-regular.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Roboto";
+  font-family: "Lato";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
 
   src:
-    url("../fonts/roboto-cyrillic-700.woff2") format("woff2"),
-    url("../fonts/roboto-cyrillic-700.woff") format("woff");
+    url("../fonts/Lato-Bold.woff2") format("woff2"),
+    url("../fonts/Lato-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+
+  src:
+    url("../fonts/Lato-Heavy.woff2") format("woff2"),
+    url("../fonts/Lato-Heavy.woff") format("woff");
 }

@@ -1,7 +1,7 @@
 import {ScrollLock} from '../utils/scroll-lock';
 
 const breakpointTablet = window.matchMedia('(min-width:768px)');
-const openButton = document.querySelector('.btn-open-menu');
+const openButton = document.querySelector('.js-open-menu');
 const closeButton = document.querySelector('.btn-close-menu');
 const mobileMenu = document.querySelector('.mobile-nav__wrapper');
 const overlay = document.querySelector('.bg-overlay');

@@ -86,7 +86,7 @@ const syncServer = () => {
   gulp.watch('source/img/**/*.svg', gulp.series(copySvg, sprite, pugToHtml, refresh));
   gulp.watch('source/img/**/*.{png,jpg,webp}', gulp.series(copyImages, pugToHtml, refresh));
 
-  gulp.watch('source/favicon/**', gulp.series(copy, refresh));
+  // gulp.watch('source/favicon/**', gulp.series(copy, refresh));
   gulp.watch('source/video/**', gulp.series(copy, refresh));
   gulp.watch('source/downloads/**', gulp.series(copy, refresh));
   gulp.watch('source/*.php', gulp.series(copy, refresh));
@@ -112,7 +112,7 @@ const copy = () => {
     'source/fonts/**',
     'source/img/**',
     'source/data/**',
-    'source/favicons/**',
+    // 'source/favicons/**',
     // 'source/favicon.ico',
     'source/video/**',
     'source/audio/**',

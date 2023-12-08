@@ -4,11 +4,9 @@
 $color-default-black:             #000000;
 $color-default-white:             #ffffff;
 $color-transparent:               rgba(255, 255, 255, 0);
+$color-main-bg:                   rgba(39, 39, 51, 0.9);
+$color-accent-blue:               #43abf0;
 
-// Base
-
-$color-nero:                      #252525;
-$color-torch-red:                 #e50000;
 $color-tangerine-yellow:          #ffcc00;
 $color-light-grey:                #d7d7d7;
 $color-gainsboro:                 #e2e2e2;
@@ -17,8 +15,7 @@ $color-gainsboro-2:               #d9d9d9;
 // Typography
 //---------------------------------
 
-$font-family--roboto:                "Roboto", "Arial", sans-serif;
-$font-family--heliosCond:            "HeliosCond", "Arial", sans-serif;
+$font-family--lato:                "Lato", "Arial", sans-serif;
 
 // Animation
 //---------------------------------

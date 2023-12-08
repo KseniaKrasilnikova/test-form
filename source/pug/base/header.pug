@@ -3,50 +3,31 @@ mixin header(headerMods, currentPage)
     const headerLinks = [
       {
         href: "#",
-        text: "Каталог инструментов",
-      },
-      {
-        href: "#",
-        text: "Все для сада"
-      },
-      {
-        href: "#",
-        text: "Ручной инструмент"
-      },
-      {
-        href: "#",
-        text: "Электрика"
-      },
-      {
-        href: "#",
-        text: "Доставка"
-      },
-      {
-        href: "#",
-        text: "Оплата"
+        text: "Бизнес",
       },
       {
         href: "#",
         text: "О нас"
       },
+      {
+        href: "#",
+        text: "Цены"
+      },
+      {
+        href: "#",
+        text: "Оформить заказ"
+      }
     ]
-
 
   header.header(class=headerMods)
     .container
       .header__content-wrapper
-        button.header__menu-btn.button.button--transparent.btn-open-menu(type="button" aria-label="Открыть меню" aria-pressed="false")
-          +icon("icon-burger", 24, 24)
-        button.header__menu-btn.button.button--transparent.btn-close-menu(type="button" aria-label="Закрыть меню" aria-pressed="false")
-          +icon("icon-cross", 14, 14)
         if(currentPage === "main.html")
           .header__logo
-            .header__logo-img
-              +img("content", "logo", "png", 120, 120, "Логотип")
+            +img("content", "logo", "png", 120, 120, "Логотип компании")
         else
-          a.header__logo(href="main.html", aria-label="Переход на главную")
-            .header__logo-img
-              +img("content", "logo", "png", 120, 120, "Логотип")
+          a.header__logo(href="main.html", aria-label="На главную страницу")
+            +img("content", "logo", "png", 120, 120, "Логотип компании")
 
         .header__content
           nav.main-nav
@@ -57,7 +38,12 @@ mixin header(headerMods, currentPage)
                   if(activeState)
                     span.main-nav__link.is-active=link.text
                   else
-                    a.main-nav__link.hover-red(href=link.href)=link.text
+                    a.main-nav__link.hover-main(href=link.href)=link.text
+
+        button.header__menu-btn.button.button--transparent.js-open-menu(type="button" aria-label="Развернуть меню" aria-pressed="false")
+          +icon("icon-burger", 24, 24)
+        button.header__menu-btn.button.button--transparent.btn-close-menu(type="button" aria-label="Свернуть меню" aria-pressed="false")
+          +icon("icon-cross", 14, 14)
         .bg-overlay
 
     .mobile-nav
@@ -71,4 +57,4 @@ mixin header(headerMods, currentPage)
                   if(activeState)
                     span.mobile-nav__link.is-active=link.text
                   else
-                    a.mobile-nav__link.hover-red(href=link.href)=link.text
+                    a.mobile-nav__link.hover-main(href=link.href)=link.text

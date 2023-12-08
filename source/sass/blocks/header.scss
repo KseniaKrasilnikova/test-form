@@ -4,11 +4,10 @@
   position: fixed;
   display: flex;
   flex-direction: column;
-  padding-top: 16px;
+  background-color: $color-main-bg;
 
   @include vp--767 {
     position: fixed;
-    padding: 0;
   }
 
   &.mobile-active {
@@ -16,92 +15,79 @@
     height: 100%;
     overflow: scroll;
   }
-}
 
-.header__content-wrapper {
-  position: relative;
-  background-color: $color-default-white;
-  display: flex;
-  flex-direction: row;
-  row-gap: 30px;
-  column-gap: 29px;
-
-  @include vp--1023 {
-    column-gap: 20px;
-  }
-
-  @include vp--767 {
+  &__content-wrapper {
+    position: relative;
     display: flex;
-    flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 0;
-    column-gap: unset;
-  }
-}
+    padding: 40px 0;
 
-.header__logo {
-  display: flex;
-  flex-direction: column;
-  flex-shrink: 0;
-  width: 210px;
-
-  @include vp--1023 {
-    width: 50px;
-  }
-}
-
-.header__logo-img {
-  flex-shrink: 0;
-
-  img {
-    width: 100%;
-    height: auto;
-  }
-}
-
-.header__content {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  margin-bottom: 20.9px;
-
-  @include vp--767 {
-    margin-bottom: 0;
-  }
-}
-
-// mobile styles
-.header__menu-btn {
-  padding: 0;
-  width: 34px;
-  height: fit-content;
-  margin-right: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-
-  svg {
-    width: 100%;
-    height: 100%;
-    color: $color-nero;
+    @include vp--767 {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 0;
+      column-gap: unset;
+    }
   }
 
-  &.btn-close-menu {
-    display: none;
-  }
-
-  &.show {
+  &__logo {
     display: flex;
+    flex-shrink: 0;
+    width: 247px;
+
+    @include vp--1023 {
+      width: 210px;
+    }
+    img {
+      width: 100%;
+      height: fit-content;;
+    }
   }
 
-  &.hide {
-    display: none;
+  &__content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  // mobile styles
+  &__wrapper {
+    position: relative;
+  }
+
+  &__menu-btn {
+    padding: 0;
+    width: 24px;
+    height: fit-content;
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+
+    svg {
+      width: 100%;
+      height: 100%;
+      color: $color-default-white;
+    }
+
+    &.btn-close-menu {
+      display: none;
+    }
+
+    &.show {
+      display: flex;
+    }
+
+    &.hide {
+      display: none;
+    }
   }
 }
 
-.btn-open-menu {
+.js-open-menu {
   display: none;
 
   @include vp--767 {
@@ -109,6 +95,3 @@
   }
 }
 
-.header__wrapper {
-  position: relative;
-}

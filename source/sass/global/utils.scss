@@ -62,13 +62,13 @@
   transition: none !important;
 }
 
-.hover-red {
+.hover-main {
   transition: color $trans-default;
 
   @media (hover: hover), screen and (min-width: 768px) {
     &:hover,
     &:focus{
-      color: $color-torch-red;
+      color: $color-accent-blue;
     }
 
     &:focus-visible {
@@ -76,12 +76,3 @@
     }
   }
 }
-
-.bold {
-  font-weight: 700;
-}
-
-//.dashed {
-//  text-decoration: underline;
-//  text-decoration-style: dotted;
-//}
