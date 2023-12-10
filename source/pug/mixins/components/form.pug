@@ -1,0 +1,29 @@
+mixin form()
+  .form-order
+    form(action="" method="post").form
+      .form__wrapper
+        .form__group
+          .form__select
+            label(for="systemType").form__label
+            select(id="systemType" name="system-type")
+              option(value="") Выберите тип системы
+              option(value="option one") option 1
+              option(value="option two") option 2
+          .form__input
+            label(for="userEmail")
+            input(id="userEmail" name="user-email" type="email" placeholder="Ваш e-mail" required)
+          .form__input
+            label(for="userName")
+            input(id="userName" name="user-name" type="text" placeholder="Ваше имя" required)
+        .form__group
+          .form__add-file
+            label
+              input(type="file" id="user-file" accept=".jpg, .png, .pdf, .doc, .jpeg").visually-hidden
+              .form__add-sign
+                span.form__add-icon
+                  +icon('icon-pin', 18, 21)
+                  +icon('icon-file', 30, 40)
+                span.form__add-text Прикрепить файл
+            button(type="button").form__file-remove
+              +icon('icon-close', 14, 14)
+        button.button.button--main.button--accentColor.button--m.form__button.form-order__button(type="submit" aria-label="подтвердить отправку формы") Отправить

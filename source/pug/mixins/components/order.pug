@@ -1,0 +1,42 @@
+-
+  const orderScheme = [
+    {
+      text: 'Lorem ipsum dolor sit amet',
+      iconName: 'icon-search',
+      iconWidth: 101,
+      iconHeight: 100,
+    },
+    {
+      text: 'Сonsecteturadipiscing elit',
+      iconName: 'icon-percent',
+      iconWidth: 101,
+      iconHeight: 100,
+    },
+    {
+      text: 'Sed do eiusmod tempor',
+      iconName: 'icon-list',
+      iconWidth: 101,
+      iconHeight: 100,
+    },
+    {
+      text: 'Esse cillum dolore eu fugiat',
+      iconName: 'icon-mail',
+      iconWidth: 101,
+      iconHeight: 100,
+    },
+    {
+      text: 'Excepteur sint occaecat cupidatat non proident',
+      iconName: 'icon-money',
+      iconWidth: 101,
+      iconHeight: 100,
+    }
+  ]
+mixin order()
+  section.order
+    .container
+      .order__content
+        h2.order__title Оформление
+          span.order__accent &nbsp;&nbsp;заказа
+        p.order__description Перед заполнением формы ознакомьтесь с нашей схемой работы!
+        +scheme(orderScheme)
+        +form()

@@ -12,35 +12,28 @@
     display: block;
     z-index: 5;
     position: absolute;
+    top: -1;
     left: 0;
     opacity: 100;
     width: 100%;
     height: auto;
-    background-color: $color-main-bg;
-
     padding: 20px 0 28px;
+    background-color: $color-main-bg;
   }
-}
-
-
-
-.mobile-nav__list {
-  @include reset-list;
-  display: flex;
-  flex-direction: column;
-}
-
-.mobile-nav__item {
-  margin-bottom: 12px;
-  font-size: 17px;
-  line-height: 24px;
-}
-
-.mobile-nav__link {
-  //color: $color-nero;
-}
-
-.mobile-nav__select {
-  padding: 0;
-  //color: $color-nero;
+  &__list {
+    @include reset-list;
+    display: flex;
+    flex-direction: column;
+  }
+  &__item {
+    margin-bottom: 12px;
+    font-size: 17px;
+    line-height: 24px;
+  }
+  &__link {
+    @include vp--767 {
+      display: inline-block;
+      width: 100%;
+    }
+  }
 }

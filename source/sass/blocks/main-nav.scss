@@ -5,6 +5,7 @@
   &__list {
     @include reset-list;
     display: flex;
+    flex-wrap: wrap;
     column-gap: 60px;
     font-weight: 600;
     font-size: 13px;
@@ -15,16 +16,3 @@
     }
   }
 }
-
-//.main-nav__item {
-//  &:not(:last-of-type) {
-//    margin-right: 25px;
-//  }
-//
-//  @include vp--1023 {
-//    &:not(:last-of-type) {
-//      margin-right: 15px;
-//    }
-//  }
-//}
-

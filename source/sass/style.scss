@@ -1,11 +1,9 @@
 // Vendor
 //---------------------------------
-
 @import "vendor/normalize";
 
 // Global
 //---------------------------------
-
 @import "variables";
 @import "mixins";
 @import "global/fonts";
@@ -15,16 +13,17 @@
 
 // Components
 //---------------------------------
-
-//@import "components/product-card-banner";
-
+@import "components/button";
+@import "components/form";
+@import "components/scheme";
 
 // Blocks
 //---------------------------------
 @import "blocks/bg-overlay";
-@import "blocks/button";
+@import "blocks/form-order";
 @import "blocks/footer";
 @import "blocks/header";
 @import "blocks/main-nav";
 @import "blocks/mobile-nav";
 @import "blocks/page-content";
+@import "blocks/order";

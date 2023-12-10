@@ -37,13 +37,16 @@
     display: flex;
     flex-shrink: 0;
     width: 247px;
+    margin-right: 20px;
 
     @include vp--1023 {
       width: 210px;
+      margin-right: 10px;
     }
     img {
       width: 100%;
-      height: fit-content;;
+      height: fit-content;
+      margin-right: 0;
     }
   }
 

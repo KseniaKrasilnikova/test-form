@@ -1,0 +1,48 @@
+.scheme {
+  margin-bottom: 80px;
+
+  @include vp--767 {
+    margin-bottom: 40px;
+  }
+
+  &__list {
+    @include reset-list;
+    display: flex;
+    column-gap: 30px;
+    font-size: 16px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 209px;
+    padding: 0 10px;
+  }
+  &__item:not(:last-of-type) {
+    position: relative;
+  }
+  &__item:not(:last-of-type):after {
+    position: absolute;
+    content: '';
+    top: 30%;
+    right: -69px;
+    width: 110px;
+    height: 6px;
+    background-image: url(../img/svg/dots.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+  }
+
+  &__icon {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    margin: 0;
+    text-align: center;
+  }
+}

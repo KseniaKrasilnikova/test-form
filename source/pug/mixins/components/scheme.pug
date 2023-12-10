@@ -1,0 +1,8 @@
+mixin scheme(data)
+  .scheme
+    ul.scheme__list
+      each item in data
+        li.scheme__item
+          span.scheme__icon
+            +icon(item.iconName, item.iconWidth, item.iconHeight)
+          p.scheme__text= item.text
