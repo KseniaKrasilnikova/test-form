@@ -38,5 +38,6 @@ mixin order()
         h2.order__title Оформление
           span.order__accent &nbsp;&nbsp;заказа
         p.order__description Перед заполнением формы ознакомьтесь с нашей схемой работы!
-        +scheme(orderScheme)
+        .order__scheme
+          +scheme(orderScheme)
         +form()

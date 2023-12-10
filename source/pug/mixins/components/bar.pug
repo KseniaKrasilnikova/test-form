@@ -1,0 +1,10 @@
+mixin bar(data)
+  .bar
+    .bar__wrapper
+      .bar__info
+        div.bar__text!=data.text
+        div.bar__input
+          label(for="barRange")
+            input(id="barRange" name="bar-range" placeholder="75" type="number" maxlength="3")
+      .bar__range
+        .bar__handle

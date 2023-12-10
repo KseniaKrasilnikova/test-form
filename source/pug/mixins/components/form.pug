@@ -1,3 +1,7 @@
+-
+  const orderBar = {
+    text: "Sed ut perspiciatis, unde omnis iste natus"
+  }
 mixin form()
   .form-order
     form(action="" method="post").form
@@ -16,9 +20,11 @@ mixin form()
             label(for="userName")
             input(id="userName" name="user-name" type="text" placeholder="Ваше имя" required)
         .form__group
+          +bar(orderBar)
+
           .form__add-file
             label
-              input(type="file" id="user-file" accept=".jpg, .png, .pdf, .doc, .jpeg").visually-hidden
+              input(type="file" id="user-file" accept=".jpg, .png, .pdf, .doc, .jpeg")
               .form__add-sign
                 span.form__add-icon
                   +icon('icon-pin', 18, 21)

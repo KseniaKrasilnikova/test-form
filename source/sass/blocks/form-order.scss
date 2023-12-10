@@ -1,6 +1,10 @@
 .form-order {
   width: 100%;
+  margin-bottom: 30px;
   &__button {
     width: 370px;
+  }
+  .bar {
+    grid-column: 1/3;
   }
 }
