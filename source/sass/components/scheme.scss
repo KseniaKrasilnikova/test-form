@@ -12,21 +12,33 @@
     align-items: center;
     width: 209px;
     padding: 0 10px;
+    @include vp--1279 {
+      width: 170px;
+    }
   }
   &__item:not(:last-of-type) {
-    position: relative;
+    .scheme__icon {
+      position: relative;
+    }
   }
-  &__item:not(:last-of-type):after {
-    position: absolute;
-    content: '';
-    top: 30%;
-    right: -69px;
-    width: 110px;
-    height: 6px;
-    background-image: url(../img/svg/dots.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
+  &__item:not(:last-of-type) {
+    .scheme__icon::after {
+      position: absolute;
+      content: '';
+      top: 47%;
+      right: -123%;
+      width: 110px;
+      height: 6px;
+      background-image: url(../img/svg/dots.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 100%;
+      @include vp--1279 {
+        right: -90%;
+        width: 80%;
+      }
+    }
+
   }
 
   &__icon {

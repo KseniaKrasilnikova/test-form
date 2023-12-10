@@ -8,7 +8,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
   }
   &__text {
     font-size: 18px;
@@ -38,26 +38,59 @@
       color: rgba(255, 255, 255, 0.85);
     }
   }
-
-  &__range {
-    position: relative;
+  input[type="range"] {
     width: 100%;
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    cursor: grab;
+  }
+
+  input[type="range"]::-webkit-slider-runnable-track { //Chrome, Safari, Opera, and Edge Chromium
     height: 6px;
     background-color: rgba(255, 255, 255, 0.7);
     border: 1px solid $color-default-white;
     border-radius: 4px;
   }
 
-  &__handle {
-    content: "";
-    position: absolute;
-    top: -10px;
-    right: 20%;
+  input[type="range"]::-moz-range-track { // Firefox
+    height: 6px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 1px solid $color-default-white;
+    border-radius: 4px;
+  }
+
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
     width: 23.75px;
     height: 23.75px;
+    margin-top: -9px;
     background-color: $color-detail-blue;
     border: 3px solid $color-border-blue;
     border-radius: 50px;
-    cursor: pointer;
+    transition: all $trans-default;
+  }
+
+  input[type="range"]::-moz-range-thumb {
+    background-color: $color-detail-blue;
+    border: 3px solid $color-border-blue;
+    border-radius: 50px;
+    width: 23.75px;
+    height: 23.75px;
+  }
+
+  input[type="range"]:focus {
+    outline: none;
+  }
+  input[type="range"]:focus::-webkit-slider-thumb {
+    border: 1px solid $color-detail-blue;
+    outline: 3px solid $color-border-blue;
+    outline-offset: 0.125rem;
+  }
+  input[type="range"]:focus::-moz-range-thumb {
+    border: 1px solid $color-detail-blue;
+    outline: 3px solid $color-border-blue;
+    outline-offset: 0.125rem;
   }
 }
