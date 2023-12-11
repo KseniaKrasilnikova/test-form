@@ -14,11 +14,19 @@
     margin-bottom: 30px;
     &:last-of-type {
       margin-bottom: 40px;
+      @include vp--767 {
+        margin-bottom: 30px;
+      }
     }
-  }
-  &__input,
-  &__select {
-    width: 100%;
+    @include vp--767 {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin-bottom: 20px;
+      &:last-of-type {
+        margin-bottom: 30px;
+      }
+    }
   }
 
   &__select select,
@@ -27,7 +35,7 @@
     height: 100%;
     font-size: 18px;
     background-color: rgba(255, 255, 255, 0.85);
-    border: 1px solid $color-transparent;
+    border: 1px solid $color-default-white;
     border-radius: 3px;
   }
 

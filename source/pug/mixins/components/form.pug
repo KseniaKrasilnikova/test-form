@@ -8,11 +8,35 @@ mixin form()
       .form__wrapper
         .form__group
           .form__select
-            label(for="systemType").form__label
-            select(id="systemType" name="system-type")
-              option(value="") Выберите тип системы
-              option(value="option one") option 1
-              option(value="option two") option 2
+            .custom-select
+              label(for="systemType").custom-select__label
+              select(id="systemType" name="system-type")
+                option(value="") Выберите тип системы
+                option(value="Ed ut perspiciatis") Ed ut perspiciatis
+                option(value="Nemo enim") Nemo enim ipsam
+                option(value="Et harum") Et harum quidem
+                option(value="Temporibus") Temporibus autem
+                option(value="Itaque") Itaque earum rerum
+                option(value="Nemo") Nemo
+                option(value="Uyy jhfue") Uyy jhfue
+                option(value="Tem eieipo") Tem eieipo ribus
+                option(value="Uhhf") Uhhf hjwuw iwwi
+              +icon('icon-dropdown', 9, 6)
+
+              .custom-select__btn Выберите тип системы
+              .custom-select__dropdown
+                .custom-select__wrapper
+                  .custom-select__list
+                    div Ed ut perspiciatis
+                    div Nemo enim ipsam
+                    div Et harum quidem
+                    div Temporibus autem
+                    div Itaque earum rerum
+                    div Nemo
+                    div Uyy jhfue
+                    div Tem eieipo ribus
+                    div Uhhf hjwuw iwwi
+
           .form__input
             label(for="userEmail")
             input(id="userEmail" name="user-email" type="email" placeholder="Ваш e-mail" required)

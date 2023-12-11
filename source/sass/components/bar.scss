@@ -12,6 +12,9 @@
   }
   &__text {
     font-size: 18px;
+    @include vp--767 {
+      font-size: 12px;
+    }
   }
   &__input {
     position: relative;
@@ -25,6 +28,7 @@
     }
   }
   &__input input {
+    width: 100%;
     height: 22px;
     padding-right: 20px;
     text-align: right;

@@ -1,8 +1,14 @@
 .form-order {
   width: 100%;
   margin-bottom: 30px;
+  @include vp--767 {
+    margin-bottom: 16px;
+  }
   &__button {
     width: 370px;
+    @include vp--767 {
+      width: 100%;
+    }
   }
   .bar {
     grid-column: 1/3;

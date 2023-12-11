@@ -106,3 +106,15 @@ button,
 [type="submit"] {
   appearance: none;
 }
+::-webkit-scrollbar {
+  width: 7px;
+  height: 8px;
+  background-color: $color-gray-bg;
+}
+::-webkit-scrollbar-track {
+  margin: 2px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: $color-blue;
+  border-radius: 3px;
+}
