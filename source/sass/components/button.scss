@@ -15,24 +15,24 @@
   // colors
   &--accentColor {
     background-color: $color-blue;
-    border: 1px solid $color-default-white;
+    border: 0.1rem solid $color-default-white;
     color: $color-default-white;
   }
   &--white {
     background-color: $color-default-white;
-    border: 1px solid $color-border;
+    border: 0.1rem solid $color-border;
     color: $color-text-grey;
   }
 
   // sizes
   &--m {
-    padding: 14.5px;
+    padding: 1.45rem;
     font-weight: 600;
-    font-size: 15px;
+    font-size: 1.5rem;
   }
   &--s {
-    padding: 14.5px;
+    padding: 1.45rem;
     font-weight: 400;
-    font-size: 13px;
+    font-size: 1.3rem;
   }
 }

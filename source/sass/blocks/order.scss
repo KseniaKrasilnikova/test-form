@@ -7,9 +7,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 116px 0;
+    padding: 11.6rem 0;
     @include vp--1023 {
-      padding: 50px 0;
+      padding: 5rem 0;
     }
   }
   &__accent {
@@ -17,42 +17,42 @@
   }
 
   &__title {
-    margin: 0 0 30px 0;
+    margin: 0 0 3rem 0;
     font-weight: 800;
-    font-size: 36px;
+    font-size: 3.6rem;
     text-align: center;
     text-transform: uppercase;
     @include vp--767 {
-      margin-bottom: 20px;
-      font-size: 26px;
+      margin-bottom: 2rem;
+      font-size: 2.6rem;
     }
     @include vp--374 {
-      font-size: 22px;
+      font-size: 2.2rem;
     }
   }
   &__description {
-    margin: 0 0 80px 0;
-    font-size: 18px;
+    margin: 0 0 8rem 0;
+    font-size: 1.8rem;
     color: $color-text-white;
     text-align: center;
     @include vp--1023 {
-      margin-bottom: 50px;
+      margin-bottom: 5rem;
     }
     @include vp--767 {
-      margin-bottom: 30px;
+      margin-bottom: 3rem;
     }
   }
 
   &__scheme {
     width: 100%;
     max-width: 100%;
-    margin-bottom: 86px;
+    margin-bottom: 8.6rem;
     @include vp--1023 {
-      margin-bottom: 50px;
+      margin-bottom: 5rem;
     }
 
     @include vp--767 {
-      margin-bottom: 40px;
+      margin-bottom: 4rem;
     }
   }
 }

@@ -1,12 +1,12 @@
 .form-order {
   width: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 3rem;
   @include vp--767 {
-    margin-bottom: 16px;
+    margin-bottom: 1.6rem;
   }
   &__button {
-    width: 370px;
-    margin-bottom: 5px;
+    width: 37rem;
+    margin-bottom: 0.5rem;
     @include vp--767 {
       width: 100%;
     }

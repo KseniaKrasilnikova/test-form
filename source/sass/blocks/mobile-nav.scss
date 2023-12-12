@@ -17,7 +17,7 @@
     opacity: 100;
     width: 100%;
     height: auto;
-    padding: 20px 0 28px;
+    padding: 2rem 0 2.8rem;
     background-color: $color-main-bg;
   }
   &__list {
@@ -26,9 +26,9 @@
     flex-direction: column;
   }
   &__item {
-    margin-bottom: 12px;
-    font-size: 17px;
-    line-height: 24px;
+    margin-bottom: 1.2rem;
+    font-size: 1.7rem;
+    line-height: 2.4rem;
   }
   &__link {
     @include vp--767 {

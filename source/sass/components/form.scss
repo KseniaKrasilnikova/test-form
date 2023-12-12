@@ -8,23 +8,23 @@
   }
   &__group {
     display: grid;
-    gap: 30px;
+    gap: 3rem;
     grid-template-columns: repeat(3, 1fr);
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 3rem;
     &:last-of-type {
-      margin-bottom: 42px;
+      margin-bottom: 4.2rem;
       @include vp--767 {
-        margin-bottom: 30px;
+        margin-bottom: 3rem;
       }
     }
     @include vp--767 {
       display: flex;
       flex-direction: column;
-      gap: 14px;
-      margin-bottom: 20px;
+      gap: 1.4rem;
+      margin-bottom: 2rem;
       &:last-of-type {
-        margin-bottom: 30px;
+        margin-bottom: 3rem;
       }
     }
   }
@@ -33,24 +33,24 @@
   &__input input {
     width: 100%;
     height: 100%;
-    font-size: 18px;
+    font-size: 1.8rem;
     background-color: rgba(255, 255, 255, 0.85);
-    border: 1px solid $color-default-white;
-    border-radius: 3px;
+    border: 0.1rem solid $color-default-white;
+    border-radius: 0.3rem;
   }
 
   &__input input {
-    padding: 12px 10px;
+    padding: 1.2rem 1rem;
     font-weight: 800;
     color: $color-default-black;
     &::placeholder {
       font-weight: 400;
-      font-size: 18px;
+      font-size: 1.8rem;
       color: $color-text-dark-grey;
     }
   }
   &__select select {
-    padding: 12px 30px 12px 10px;
+    padding: 1.2rem 3rem 1.2rem 1rem;
     appearance: none;
     background-repeat: no-repeat;
     background-position: calc(100% - 0.8em) 1.1em;
@@ -82,9 +82,9 @@
       align-items: center;
       justify-content: center;
       width: 100%;
-      height: 48px;
+      height: 4.8rem;
       font-weight: 600;
-      font-size: 15px;
+      font-size: 1.5rem;
       text-transform: uppercase;
       background-color: $color-default-white;
       border: 2px solid $color-blue;
@@ -132,21 +132,21 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 10px;
+    margin-right: 1rem;
 
     svg {
-      width: 18px;
-      height: 26px;
+      width: 1.8rem;
+      height: 2.6rem;
       &:last-child {
         display: none;
-        width: 18px;
-        height: 20px;
+        width: 1.8rem;
+        height: 2rem;
       }
     }
   }
   &__add-text {
     font-weight: 600;
-    font-size: 15px;
+    font-size: 1.5rem;
     text-transform: uppercase;
   }
   &__file-remove {
@@ -160,8 +160,8 @@
     cursor: pointer;
 
     svg {
-      width: 14px;
-      height: 14px;
+      width: 1.4rem;
+      height: 1.4rem;
     }
 
     &.active {

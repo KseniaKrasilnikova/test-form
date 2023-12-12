@@ -4,8 +4,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 30px 0;
-    font-size: 13px;
+    padding: 3rem 0;
+    font-size: 1.3rem;
     @include vp--1023 {
       flex-direction: column;
       gap: 16px;
@@ -13,11 +13,11 @@
   }
 
   &__copyright {
-    max-width: 349px;
-    border-right: 1px solid $color-font-white;
-    padding-right: 43px;
+    max-width: 34.9rem;
+    border-right: 0.1rem solid $color-font-white;
+    padding-right: 4.3rem;
     @include vp--1279 {
-      padding-right: 23px;
+      padding-right: 2.3rem;
     }
     @include vp--1023 {
       order: 3;
@@ -26,14 +26,14 @@
       border-right: none;
     }
     @include vp--374 {
-      font-size: 11px;
+      font-size: 1.1rem;
     }
   }
 
   &__contacts-wrapper {
     max-width: 34%;
-    padding-left: 35px;
-    border-left: 1px solid $color-font-white;
+    padding-left: 3.5rem;
+    border-left: 0.1rem solid $color-font-white;
     @include vp--1023 {
       order: 2;
       max-width: 100%;
@@ -43,7 +43,7 @@
   }
   &__wallets-wrapper {
     max-width: 35%;
-    padding: 0 8px;
+    padding: 0 0.8rem;
     @include vp--1023 {
       order: 1;
       max-width: 100%;
@@ -72,15 +72,15 @@
     display: flex;
     align-items: center;
     gap: 12px;
-    max-width: 155px;
+    max-width: 15.5rem;
   }
 
   &__icon {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 20px;
-    height: 20px;
+    width: 2rem;
+    height: 2rem;
     svg {
       color: $color-blue;
     }
