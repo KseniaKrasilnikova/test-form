@@ -4,5 +4,6 @@ mixin scheme(data)
       each item in data
         li.scheme__item
           span.scheme__icon
-            +icon(item.iconName, item.iconWidth, item.iconHeight)
+            span.scheme__icon-wrapper
+              +icon(item.iconName, item.iconWidth, item.iconHeight)
           p.scheme__text= item.text
