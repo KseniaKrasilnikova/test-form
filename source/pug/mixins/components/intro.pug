@@ -1,17 +1,18 @@
 mixin intro()
-  section.intro
+  section.intro(data-animate)
     .container
       .intro__content
-        h2.intro__title
-          span.order__accent Lorem ipsum&nbsp;
-          | dolor sit<br> ametconsectetur&nbsp;
-          span.order__accent adipiscing
-        .intro__description
-          h3.intro__subtitle At vero eos et accusamus et iusto odio dignissimos ducimus!
-          ul.intro__list
-            li.intro__item Totam rem aperiam eaque ipsa
-            li.intro__item Sit voluptatem accusantium doloremque laudantium
-            li.intro__item Sed ut perspiciatis, unde omnis iste natus error
+        .intro__text.sup
+          h2.intro__title
+            span.order__accent Lorem ipsum&nbsp;
+            | dolor sit<br> ametconsectetur&nbsp;
+            span.order__accent adipiscing
+          .intro__description
+            h3.intro__subtitle At vero eos et accusamus et iusto odio dignissimos ducimus!
+            ul.intro__list
+              li.intro__item Totam rem aperiam eaque ipsa
+              li.intro__item Sit voluptatem accusantium doloremque laudantium
+              li.intro__item Sed ut perspiciatis, unde omnis iste natus error
         .intro__btns
           a(href="#" aria-label="").button.button--main.button--accentColor.hover-main.button--s.intro__btn заказать
           a(href="#" aria-label="").button.button--main.button--white.hover-main.button--s.intro__btn подробнее
