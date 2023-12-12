@@ -6,6 +6,7 @@
 
 html {
   box-sizing: border-box;
+  font-size: 62.5%;
 }
 
 html,
@@ -19,7 +20,7 @@ body {
   height: 100%;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 1.2;
   font-family: $font-family--lato;
   color: $color-default-white;
@@ -110,10 +111,9 @@ button,
   width: 7px;
   height: 8px;
   background-color: $color-gray-bg;
+  border-radius: 3px;
 }
-::-webkit-scrollbar-track {
-  margin: 2px;
-}
+
 ::-webkit-scrollbar-thumb {
   background-color: $color-blue;
   border-radius: 3px;

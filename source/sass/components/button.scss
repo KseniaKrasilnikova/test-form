@@ -17,11 +17,6 @@
     background-color: $color-blue;
     border: 1px solid $color-default-white;
     color: $color-default-white;
-    &:hover,
-    &:focus {
-      border: 1px solid $color-text-dark-grey;
-      color: $color-text-dark-grey;
-    }
   }
   &--white {
     background-color: $color-default-white;

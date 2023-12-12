@@ -1,10 +1,11 @@
 .intro {
   position: relative;
   overflow: hidden;
-  padding-bottom: 70px;
+  padding-bottom: 72px;
   background-image: url("../img/content/bg-men.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position-y: 104%;
   @include vp--1279 {
     background-position: 60%;
   }

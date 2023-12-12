@@ -75,3 +75,17 @@
     }
   }
 }
+.hover-secondary {
+  transition: color $trans-default;
+
+  @media (hover: hover), screen and (min-width: 768px) {
+    &:hover,
+    &:focus{
+      border: 1px solid $color-text-dark-grey;
+      color: $color-default-white;
+    }
+    &:focus-visible {
+      outline: none;
+    }
+  }
+}
