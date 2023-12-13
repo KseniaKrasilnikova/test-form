@@ -3,14 +3,17 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
   @supports (background-image: -webkit-image-set(url('../img/svg/bg-dots.webp') 1x)) {
     & {background-image: -webkit-image-set(url('../img/svg/bg-dots.webp') 1x) }
   }
+
   &__content {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 11.6rem 0;
+
     @include vp--1023 {
       padding: 5rem 0;
     }
@@ -22,22 +25,27 @@
     font-size: 3.6rem;
     text-align: center;
     text-transform: uppercase;
+
     @include vp--767 {
       margin-bottom: 2rem;
       font-size: 2.6rem;
     }
+
     @include vp--374 {
       font-size: 2.2rem;
     }
   }
+
   &__description {
     margin: 0 0 8rem 0;
     font-size: 1.8rem;
     color: $color-text-white;
     text-align: center;
+
     @include vp--1023 {
       margin-bottom: 5rem;
     }
+
     @include vp--767 {
       margin-bottom: 3rem;
     }
@@ -47,6 +55,7 @@
     width: 100%;
     max-width: 100%;
     margin-bottom: 8.6rem;
+
     @include vp--1023 {
       margin-bottom: 5rem;
     }

@@ -20,16 +20,19 @@
     padding: 2rem 0 2.8rem;
     background-color: $color-main-bg;
   }
+
   &__list {
     @include reset-list;
     display: flex;
     flex-direction: column;
   }
+
   &__item {
     margin-bottom: 1.2rem;
     font-size: 1.7rem;
     line-height: 2.4rem;
   }
+
   &__link {
     @include vp--767 {
       display: inline-block;

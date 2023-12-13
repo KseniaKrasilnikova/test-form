@@ -1,19 +1,24 @@
 .form-order {
   width: 100%;
   margin-bottom: 3rem;
+
   @include vp--767 {
     margin-bottom: 1.6rem;
   }
+
   &__button {
     width: 37rem;
     margin-bottom: 0.5rem;
+
     @include vp--767 {
       width: 100%;
     }
   }
+
   .bar {
     grid-column: 1/3;
   }
+
   .form__add-file {
     margin-bottom: 10px;
   }

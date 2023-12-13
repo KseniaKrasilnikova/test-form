@@ -4,18 +4,22 @@ mixin header(headerMods, currentPage)
       {
         href: '#',
         text: 'Бизнес',
+        label: 'Бизнес'
       },
       {
         href: '#',
-        text: "О нас"
+        text: "О нас",
+        label: 'О нас'
       },
       {
         href: '#',
-        text: 'Цены'
+        text: 'Цены',
+        label: 'Цены'
       },
       {
         href: '#',
-        text: 'Оформить заказ'
+        text: 'Оформить заказ',
+        label: 'Оформить заказ'
       }
     ]
 
@@ -38,7 +42,7 @@ mixin header(headerMods, currentPage)
                   if(activeState)
                     span.main-nav__link.is-active=link.text
                   else
-                    a.main-nav__link.hover-main(href=link.href)=link.text
+                    a.main-nav__link.hover-main(href=link.href aria-label=link.label)=link.text
 
         button.header__menu-btn.button.button--transparent.js-open-menu(type="button" aria-label="Развернуть меню" aria-pressed="false")
           +icon("icon-burger", 24, 24)
@@ -57,4 +61,4 @@ mixin header(headerMods, currentPage)
                   if(activeState)
                     span.mobile-nav__link.is-active=link.text
                   else
-                    a.mobile-nav__link.hover-main(href=link.href)=link.text
+                    a.mobile-nav__link.hover-main(href=link.href aria-label=link.label)=link.text

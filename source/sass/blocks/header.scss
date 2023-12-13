@@ -43,6 +43,7 @@
       width: 21rem;
       margin-right: 1rem;
     }
+
     img {
       width: 100%;
       height: fit-content;
@@ -55,6 +56,7 @@
     flex-direction: column;
     width: 100%;
   }
+
   // mobile styles
   &__wrapper {
     position: relative;
@@ -93,6 +95,7 @@
 
 .js-open-menu {
   display: none;
+
   @include vp--767 {
     display: flex;
   }

@@ -10,6 +10,7 @@
     font-weight: 600;
     font-size: 1.3rem;
     text-transform: uppercase;
+
     @include vp--767 {
       display: none;
     }

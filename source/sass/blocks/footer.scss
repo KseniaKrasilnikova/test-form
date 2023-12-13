@@ -1,19 +1,23 @@
 .footer {
   background-color: $color-gray-bg;
+
   &__content {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 3rem 0;
     font-size: 1.3rem;
+
     @include vp--1023 {
       flex-direction: column;
       gap: 16px;
     }
   }
+
   &__content div:not(:last-child) {
     position: relative;
   }
+
   &__content div:not(:last-child)::after {
     content: "";
     background-color: $color-font-white;
@@ -22,6 +26,7 @@
     position: absolute;
     right: 0;
     top: 0;
+
     @include vp--1023 {
       display: none;
     }
@@ -32,10 +37,12 @@
     width: 29%;
     max-width: 340px;
     padding-right: 10px;
+
     @include vp--1279 {
       padding-right: 2.3rem;
       width: 20%;
     }
+
     @include vp--1023 {
       order: 3;
       align-self: center;
@@ -44,18 +51,22 @@
       padding-right: 0;
       text-align: center;
     }
+
     @include vp--374 {
       font-size: 1.1rem;
     }
   }
+
   &__wallets-wrapper {
     align-self: stretch;
     max-width: 38%;
     margin-left: 3rem;
     padding-right: 4.5rem;
+
     @include vp--1279 {
       max-width: 44%;
     }
+
     @include vp--1023 {
       order: 1;
       align-self: center;
@@ -65,14 +76,15 @@
     }
   }
 
-
   &__contacts-wrapper {
     align-self: stretch;
     max-width: 30%;
     padding-left: 3.5rem;
+
     @include vp--1279 {
       max-width: 36%;
     }
+
     @include vp--1023 {
       order: 2;
       align-self: center;
@@ -92,8 +104,10 @@
       gap: 24px;
     }
   }
+
   &__contacts-list {
     grid-template-columns: 1fr 1fr;
+
     @include vp--1023 {
       display: flex;
       flex-wrap: wrap;
@@ -127,6 +141,7 @@
     flex-shrink: 0;
     width: 2rem;
     height: 2rem;
+
     svg {
       color: $color-blue;
     }
