@@ -11,60 +11,104 @@
       gap: 16px;
     }
   }
+  &__content div:not(:last-child) {
+    position: relative;
+  }
+  &__content div:not(:last-child)::after {
+    content: "";
+    background-color: $color-font-white;
+    height: 100%;
+    width: 1px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    @include vp--1023 {
+      display: none;
+    }
+  }
 
   &__copyright {
-    max-width: 34.9rem;
-    border-right: 0.1rem solid $color-font-white;
-    padding-right: 4.3rem;
+    align-self: stretch;
+    width: 29%;
+    max-width: 340px;
+    padding-right: 10px;
     @include vp--1279 {
       padding-right: 2.3rem;
+      width: 20%;
     }
     @include vp--1023 {
       order: 3;
+      align-self: center;
+      width: 100%;
       max-width: 100%;
       padding-right: 0;
-      border-right: none;
+      text-align: center;
     }
     @include vp--374 {
       font-size: 1.1rem;
     }
   }
-
-  &__contacts-wrapper {
-    max-width: 34%;
-    padding-left: 3.5rem;
-    border-left: 0.1rem solid $color-font-white;
-    @include vp--1023 {
-      order: 2;
-      max-width: 100%;
-      padding-left: 0;
-      border-left: none;
-    }
-  }
   &__wallets-wrapper {
-    max-width: 35%;
-    padding: 0 0.8rem;
+    align-self: stretch;
+    max-width: 38%;
+    margin-left: 3rem;
+    padding-right: 4.5rem;
+    @include vp--1279 {
+      max-width: 44%;
+    }
     @include vp--1023 {
       order: 1;
+      align-self: center;
       max-width: 100%;
       padding: 0;
+      margin-left: 0;
+    }
+  }
+
+
+  &__contacts-wrapper {
+    align-self: stretch;
+    max-width: 30%;
+    padding-left: 3.5rem;
+    @include vp--1279 {
+      max-width: 36%;
+    }
+    @include vp--1023 {
+      order: 2;
+      align-self: center;
+      max-width: 100%;
+      padding-left: 0;
     }
   }
 
   &__wallets-list,
   &__contacts-list {
     @include reset-list;
-    display: flex;
-    align-items: center;
-    gap: 44px;
+    display: grid;
+    column-gap: 44px;
+    row-gap: 20px;
+
     @include vp--374 {
       gap: 24px;
     }
   }
+  &__contacts-list {
+    grid-template-columns: 1fr 1fr;
+    @include vp--1023 {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
 
   &__wallets-list {
-    gap: 37px;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 37px;
     color: $color-font-white;
+
+    @include vp--1023 {
+      display: flex;
+      flex-wrap: wrap;
+    }
   }
 
   &__wallet-item,
@@ -73,12 +117,14 @@
     align-items: center;
     gap: 12px;
     max-width: 15.5rem;
+    width: max-content;
   }
 
   &__icon {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-shrink: 0;
     width: 2rem;
     height: 2rem;
     svg {
