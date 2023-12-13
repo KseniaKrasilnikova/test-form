@@ -111,6 +111,7 @@
       height: 10rem;
     }
   }
+
   &__icon-wrapper {
     display: flex;
     align-items: center;
@@ -131,12 +132,15 @@
   }
 
   &__text {
+    /* stylelint-disable-next-line */
     max-width: -webkit-fill-available;
     margin: 0;
     text-align: center;
     word-wrap: break-word;
     hyphens: auto;
+    /* stylelint-disable-next-line */
     -ms-hyphens: auto;
+    /* stylelint-disable-next-line */
     -webkit-hyphens: auto;
     transition: all $trans-default;
 

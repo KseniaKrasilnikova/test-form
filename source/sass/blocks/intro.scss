@@ -7,8 +7,10 @@
   background-size: cover;
   background-position-y: 104%;
 
-  @supports (background-image: -webkit-image-set(url('../img/content/bg-men.webp') 1x)) {
-    & {background-image: -webkit-image-set(url('../img/content/bg-men.webp') 1x) }
+  @supports (background-image: -webkit-image-set(url("../img/content/bg-men.webp") 1x)) {
+    & {
+      background-image: -webkit-image-set(url("../img/content/bg-men.webp") 1x)
+    }
   }
 
   @include vp--1279 {

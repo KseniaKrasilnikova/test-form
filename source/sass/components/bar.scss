@@ -60,20 +60,21 @@
 
   input[type="range"] {
     width: 100%;
+    /* stylelint-disable-next-line */
     -webkit-appearance: none;
     appearance: none;
     background: transparent;
     cursor: grab;
   }
 
-  input[type="range"]::-webkit-slider-runnable-track { //Chrome, Safari, Opera, and Edge Chromium
+  input[type="range"]::-webkit-slider-runnable-track {
     height: 0.6rem;
     background-color: rgba(255, 255, 255, 0.7);
     border: 0.1rem solid $color-default-white;
     border-radius: 0.4rem;
   }
 
-  input[type="range"]::-moz-range-track { // Firefox
+  input[type="range"]::-moz-range-track {
     height: 0.6rem;
     background-color: rgba(255, 255, 255, 0.7);
     border: 0.1rem solid $color-default-white;
@@ -81,6 +82,7 @@
   }
 
   input[type="range"]::-webkit-slider-thumb {
+    /* stylelint-disable-next-line */
     -webkit-appearance: none;
     appearance: none;
     width: 23.75px;
@@ -103,14 +105,16 @@
   input[type="range"]:focus {
     outline: none;
   }
+
   input[type="range"]:focus::-webkit-slider-thumb {
     border: 0.1rem solid $color-detail-blue;
     outline: 0.3rem solid $color-border-blue;
-    outline-offset: 0.125rem;
+    outline-offset: 0.13rem;
   }
+
   input[type="range"]:focus::-moz-range-thumb {
     border: 0.1rem solid $color-detail-blue;
     outline: 0.3rem solid $color-border-blue;
-    outline-offset: 0.125rem;
+    outline-offset: 0.13rem;
   }
 }

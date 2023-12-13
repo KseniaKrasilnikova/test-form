@@ -58,6 +58,7 @@
     @content;
   }
 }
+
 @mixin vp--900 {
   @media (max-width: $vp--901 - 1) {
     @content;
