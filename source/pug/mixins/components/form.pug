@@ -4,7 +4,7 @@
   }
 mixin form()
   .form-order
-    form(action="" method="post").form
+    form(action="#" method="post").form
       .form__wrapper
         .form__group
           .form__select
@@ -49,11 +49,11 @@ mixin form()
           .form__add-file
             label
               input(type="file" id="user-file" accept=".jpg, .png, .pdf, .doc, .jpeg")
-              .form__add-sign.hover-main
+              span.form__add-sign.hover-main
                 span.form__add-icon
                   +icon('icon-pin', 18, 21)
                   +icon('icon-file', 30, 40)
                 span.form__add-text Прикрепить файл
             button(type="button").form__file-remove
               +icon('icon-close', 14, 14)
-        button.button.button--main.button--accentColor.button--m.form__button.form-order__button.hover-secondary(type="submit" aria-label="подтвердить отправку формы") Отправить
+        button.button.button--main.button--accentColor.button--m.form__button.form-order__button.hover-secondary(type="submit" aria-label="Отправить") Отправить

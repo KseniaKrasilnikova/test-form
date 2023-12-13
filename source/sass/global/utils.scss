@@ -62,6 +62,10 @@
   transition: none !important;
 }
 
+.text-accent {
+  color: $color-blue;
+}
+
 .hover-main {
   transition: color $trans-default;
 

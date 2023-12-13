@@ -4,7 +4,8 @@ mixin bar(data)
       .bar__info
         div.bar__text!=data.text
         div.bar__input
-          label(for="barRange")
-            input(id="barRange" name="bar-range" placeholder="75" type="number" maxlength="3")
+          label(for="barRangeInput")
+          input(id="barRangeInput" name="bar-range-input" type="number" placeholder="75")
       .bar__range
-        input(type="range" min="0" max="100" value="75" step="5")
+        label(for="barRange" aria-label="barRange")
+        input(id="barRange" name="bar-range" type="range" min="0" max="100" value="75" step="5")

@@ -3,6 +3,9 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  @supports (background-image: -webkit-image-set(url('../img/svg/bg-dots.webp') 1x)) {
+    & {background-image: -webkit-image-set(url('../img/svg/bg-dots.webp') 1x) }
+  }
   &__content {
     display: flex;
     flex-direction: column;
@@ -11,9 +14,6 @@
     @include vp--1023 {
       padding: 5rem 0;
     }
-  }
-  &__accent {
-    color: $color-blue;
   }
 
   &__title {
