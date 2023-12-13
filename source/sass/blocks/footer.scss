@@ -100,6 +100,12 @@
     column-gap: 44px;
     row-gap: 20px;
 
+    @include vp--1023 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
     @include vp--374 {
       gap: 24px;
     }
@@ -107,22 +113,12 @@
 
   &__contacts-list {
     grid-template-columns: 1fr 1fr;
-
-    @include vp--1023 {
-      display: flex;
-      flex-wrap: wrap;
-    }
   }
 
   &__wallets-list {
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 37px;
     color: $color-font-white;
-
-    @include vp--1023 {
-      display: flex;
-      flex-wrap: wrap;
-    }
   }
 
   &__wallet-item,
